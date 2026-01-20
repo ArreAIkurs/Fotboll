@@ -5,58 +5,51 @@
   <title>Fotbollsstjärnor</title>
   <style>
     body {
-      font-family: 'Arial', sans-serif;
+      font-family: Arial, sans-serif;
       background: #f0f2f5;
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
+      text-align: center;
     }
 
     header {
-      background: #0077b6;
+      background: #1d3557;
       color: white;
-      width: 100%;
-      padding: 1rem;
-      text-align: center;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+      padding: 20px;
     }
 
     nav {
-      margin: 1rem 0;
+      margin: 20px;
     }
 
-    nav button {
-      margin: 0 0.5rem;
-      padding: 0.5rem 1rem;
+    button {
+      padding: 10px 20px;
+      margin: 5px;
       border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      background: #00b4d8;
+      border-radius: 8px;
+      background: #457b9d;
       color: white;
-      font-weight: bold;
-      transition: background 0.3s;
+      font-size: 16px;
+      cursor: pointer;
     }
 
-    nav button:hover {
-      background: #0096c7;
+    button:hover {
+      background: #1d3557;
     }
 
     .card {
       background: white;
-      padding: 2rem;
-      border-radius: 15px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      margin: auto;
+      padding: 20px;
       max-width: 400px;
-      text-align: center;
-      transition: opacity 0.5s ease;
+      border-radius: 15px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
 
     .card img {
       width: 250px;
       border-radius: 10px;
-      margin-bottom: 1rem;
+      margin-bottom: 15px;
     }
 
     .hidden {
@@ -72,37 +65,4 @@
 
 <nav>
   <button onclick="showPlayer('messi')">Messi</button>
-  <button onclick="showPlayer('ronaldo')">Ronaldo</button>
-  <button onclick="showPlayer('zlatan')">Zlatan</button>
-</nav>
-
-<div id="messi" class="card">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/8/89/Lionel_Messi_20180626.jpg" alt="Lionel Messi">
-  <h2>Lionel Messi</h2>
-  <p>Argentinsk fotbollsspelare, känd för sin teknik, snabbhet och målskytte. En av världens bästa genom tiderna.</p>
-</div>
-
-<div id="ronaldo" class="card hidden">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg" alt="Cristiano Ronaldo">
-  <h2>Cristiano Ronaldo</h2>
-  <p>Portugisisk fotbollsspelare, känd för sin fysik, sina nickmål och sin enorma målproduktion.</p>
-</div>
-
-<div id="zlatan" class="card hidden">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Zlatan_Ibrahimovic_2018.jpg" alt="Zlatan Ibrahimović">
-  <h2>Zlatan Ibrahimović</h2>
-  <p>Svensk fotbollsspelare, känd för styrka, teknik och självförtroende. Har spelat i Europas största klubbar.</p>
-</div>
-
-<script>
-  function showPlayer(playerId) {
-    const players = ['messi', 'ronaldo', 'zlatan'];
-    players.forEach(id => {
-      document.getElementById(id).classList.add('hidden');
-    });
-    document.getElementById(playerId).classList.remove('hidden');
-  }
-</script>
-
-</body>
-</html>
+  <button o
